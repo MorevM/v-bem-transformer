@@ -1,4 +1,4 @@
-# @morev/v-bem
+# @morev/v-bem-transformer
 
 Someday I'll write it, I promise
 
