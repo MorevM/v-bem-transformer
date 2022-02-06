@@ -1,0 +1,76 @@
+{
+	"name": "@morev/v-bem-transformer",
+	"description": "Intuitive and performant BEM in Vue files via pseudo-directive",
+	"type": "module",
+	"version": "0.0.1",
+	"private": false,
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"author": {
+		"name": "Maxim Morev",
+		"email": "max.seainside@gmail.com"
+	},
+	"homepage": "https://github.com/MorevM/v-bem-transformer#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MorevM/v-bem-transformer"
+	},
+	"bugs": {
+		"url": "https://github.com/MorevM/v-bem-transformer/issues"
+	},
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		},
+		"./bundlers": {
+			"import": "./dist/bundlers.js",
+			"require": "./dist/bundlers.cjs"
+		},
+		"./vue": {
+			"import": "./dist/vue.js",
+			"require": "./dist/vue.cjs"
+		},
+		"./nuxt": {
+			"import": "./dist/nuxt.js",
+			"require": "./dist/nuxt.cjs"
+		}
+	},
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"scripts": {
+		"prepare": "husky install ./.husky",
+		"vscode-settings": "cp .vscode/settings.template.json .vscode/settings.json",
+		"lint": "eslint \"**/*.{js,yml,yaml,json,json5,jsonc}\"",
+		"lint:fix": "yarn lint --fix",
+		"test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+		"build": "rollup -c",
+		"release": "release-it --disable-metrics"
+	},
+	"dependencies": {
+		"@morev/more-bem-classnames": "^1.0.1",
+		"unplugin": "^0.3.0"
+	},
+	"devDependencies": {
+		"@morev/commitlint-config": "^0.0.7",
+		"@morev/eslint-config": "^3.1.7",
+		"@release-it/conventional-changelog": "^4.1.0",
+		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-node-resolve": "^13.0.6",
+		"@types/jest": "^27.4.0",
+		"eslint": "^8.7.0",
+		"husky": "^7.0.4",
+		"jest": "^27.3.1",
+		"lint-staged": "^12.3.1",
+		"release-it": "^14.12.4",
+		"rollup": "^2.61.1",
+		"rollup-plugin-copy": "^3.4.0",
+		"rollup-plugin-terser": "^7.0.2"
+	}
+}

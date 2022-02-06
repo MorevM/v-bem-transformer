@@ -1,0 +1,9 @@
+!.github
+!.vscode
+!.*
+dist
+coverage
+node_modules
+
+# Lodash templates inside
+src/_nuxt-plugin.js

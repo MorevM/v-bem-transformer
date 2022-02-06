@@ -1,0 +1,14 @@
+{
+	"prettier.enable": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.stylelint": true
+	},
+	"eslint.validate": [
+		"vue",
+		"json",
+		"jsonc",
+		"json5",
+		"yaml"
+	]
+}
