@@ -716,10 +716,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@morev/commitlint-config@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@morev/commitlint-config/-/commitlint-config-0.0.7.tgz#82f9a166df807182d927eaa6049af43d849f0880"
-  integrity sha512-Pi1Z8hSjhYfc8tXsNaPQCS7rKp24M7hNklBIf8medG50OlImbZxlAAIHF+Q5WuFl0EA6CQeWVAoHq/NY3Ep0bg==
+"@morev/commitlint-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@morev/commitlint-config/-/commitlint-config-0.1.0.tgz#c6dec5c3495dca41a990e25569311a710ea49423"
+  integrity sha512-4qlFqRSqkmFaQDMXG3ezRCfazHxkMC1+BnEsOxfxM0VP/dJCF5nDoc4I0Sy/cuIQQwuVjdQmwMmbwC6kPJlfYg==
   dependencies:
     "@commitlint/cli" "^16.1.0"
     conventional-changelog-conventionalcommits "^4.6.3"
