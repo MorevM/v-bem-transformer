@@ -3,7 +3,8 @@ updates:
   - package-ecosystem: npm
     directory: '/'
     schedule:
-      interval: daily
+      interval: weekly
+      day: saturday
     allow:
       - dependency-type: direct
     assignees:
