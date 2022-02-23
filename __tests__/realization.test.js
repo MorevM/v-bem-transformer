@@ -1,8 +1,8 @@
-import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'node:path';
-import fs from 'node:fs';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
+import fs from 'fs';
 
-import { transformer } from '../lib/transformer';
+import { transformer } from '../lib/transformer.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

@@ -1,2 +1,2 @@
-export * from './bundlers';
-export * from './vue';
+export * from './bundlers.js';
+export * from './vue.js';

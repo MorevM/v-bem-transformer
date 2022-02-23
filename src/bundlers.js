@@ -1,6 +1,6 @@
 import { createUnplugin } from 'unplugin';
-import { transformer } from '../lib/transformer';
-import { defaultOptions } from './_defaults';
+import { transformer } from '../lib/transformer.js';
+import { defaultOptions } from './_defaults.js';
 
 export const unplugin = createUnplugin((userOptions) => {
 	const options = { ...defaultOptions, ...userOptions };

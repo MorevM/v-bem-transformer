@@ -1,5 +1,5 @@
 import { resolve } from 'path';
-import { unplugin } from './bundlers';
+import { unplugin } from './bundlers.js';
 
 export default function nuxtModule(options) {
 	// Webpack 4

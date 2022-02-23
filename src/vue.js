@@ -1,5 +1,5 @@
 import bemClassnames from '@morev/more-bem-classnames';
-import { defaultOptions } from './_defaults';
+import { defaultOptions } from './_defaults.js';
 
 export const vuePlugin = (userOptions) => {
 	const options = { ...defaultOptions, ...userOptions };
