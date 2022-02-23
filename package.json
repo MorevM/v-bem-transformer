@@ -54,22 +54,22 @@
 		"release": "release-it --disable-metrics"
 	},
 	"dependencies": {
-		"@morev/more-bem-classnames": "^1.0.1",
+		"@morev/more-bem-classnames": "^1.0.2",
 		"unplugin": "^0.3.0"
 	},
 	"devDependencies": {
-		"@morev/commitlint-config": "^0.0.7",
+		"@morev/commitlint-config": "^0.1.0",
 		"@morev/eslint-config": "^6.0.2",
 		"@release-it/conventional-changelog": "^4.1.0",
-		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-commonjs": "^21.0.2",
 		"@rollup/plugin-node-resolve": "^13.0.6",
-		"@types/jest": "^27.4.0",
-		"eslint": "^8.7.0",
+		"@types/jest": "^27.4.1",
+		"eslint": "^8.9.0",
 		"husky": "^7.0.4",
-		"jest": "^27.3.1",
-		"lint-staged": "^12.3.1",
-		"release-it": "^14.12.4",
-		"rollup": "^2.61.1",
+		"jest": "^27.5.1",
+		"lint-staged": "^12.3.4",
+		"release-it": "^14.12.5",
+		"rollup": "^2.68.0",
 		"rollup-plugin-copy": "^3.4.0",
 		"rollup-plugin-terser": "^7.0.2"
 	}
