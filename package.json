@@ -59,7 +59,7 @@
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.0.7",
-		"@morev/eslint-config": "^3.1.7",
+		"@morev/eslint-config": "^6.0.2",
 		"@release-it/conventional-changelog": "^4.1.0",
 		"@rollup/plugin-commonjs": "^21.0.1",
 		"@rollup/plugin-node-resolve": "^13.0.6",
