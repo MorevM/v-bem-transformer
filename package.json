@@ -55,7 +55,7 @@
 	},
 	"dependencies": {
 		"@morev/more-bem-classnames": "^1.0.2",
-		"unplugin": "^0.3.0"
+		"unplugin": "^0.4.0"
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.1.0",
