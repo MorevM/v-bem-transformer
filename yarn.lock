@@ -737,9 +737,9 @@
     lodash.clonedeep "^4.5.0"
 
 "@morev/eslint-config@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@morev/eslint-config/-/eslint-config-8.0.2.tgz#72d4a62b1537342f900e5bdfc88767b039cea5b6"
-  integrity sha512-KOhvUQhQzKS8O2Zz1CpEPMDIaURv6QRSt1qjSsosdP1Dc7z6WoTPIo+xNdv2HPLfFd+SD4plrYcwhgAK6POV7w==
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@morev/eslint-config/-/eslint-config-8.1.0.tgz#f49fb6e3205c0571c0fc8f286aeb2535e14dbb3e"
+  integrity sha512-rrJQMzoY1SVNdwPtr1ftYhZTl6Aoj/+rsddL1quLBksqAQC+J3Z+EHZF9gsSQWEVMGlEqqYWjdCpul1WKtlFnw==
   dependencies:
     "@babel/core" "^7.16.12"
     "@babel/eslint-parser" "^7.16.5"
