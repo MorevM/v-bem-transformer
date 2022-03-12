@@ -1,12 +1,13 @@
-<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing -->
+<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names -->
 <template>
-	<div v-bem>
-		<div v-bem="modifiers"></div>
+	<div v-if="someCondition > 0" v-bem>
+		<div v-if="someCondition >= ''" v-bem="modifiers"></div>
 		<div v-bem="{ inline: 'modifiers' }"></div>
 		<div v-bem='{ inline: "modifiers" }'></div>
-		<div v-bem="{
-			formatted: true,
-		}"
+		<div
+			v-bem="{
+				formatted: true,
+			}"
 		></div>
 
 		<div v-bem.static></div>
@@ -25,10 +26,11 @@
 		<div v-bem:el.static.another-static.strangeStatic></div>
 		<div v-bem:el.static.another-static.strangeStatic="{ some: true, anotherOne: 1 }"></div>
 
-		<div v-bem:el.with-formatting="{
-			some: true,
-			anotherOne: 1,
-		}"
+		<div
+			v-bem:el.with-formatting="{
+				some: true,
+				anotherOne: 1,
+			}"
 		></div>
 
 		<div class="static-class" v-bem:static></div>

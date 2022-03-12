@@ -1,12 +1,13 @@
-<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing -->
+<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names -->
 <template>
-	<div :class="b(null)">
-		<div :class="b(null, modifiers)"></div>
+	<div v-if="someCondition > 0" :class="b(null)">
+		<div v-if="someCondition >= ''" :class="b(null, modifiers)"></div>
 		<div :class="b(null, { inline: 'modifiers' })"></div>
 		<div :class="b(null, { inline: 'modifiers' })"></div>
-		<div :class="b(null, {
-			formatted: true,
-		})"
+		<div
+			:class="b(null, {
+				formatted: true,
+			})"
 		></div>
 
 		<div :class="b(null, `static`)"></div>
@@ -25,10 +26,11 @@
 		<div :class="b('el', `static another-static strangeStatic`)"></div>
 		<div :class="b('el', { some: true, anotherOne: 1 }, `static another-static strangeStatic`)"></div>
 
-		<div :class="b('el', {
-			some: true,
-			anotherOne: 1,
-		}, `with-formatting`)"
+		<div
+			:class="b('el', {
+				some: true,
+				anotherOne: 1,
+			}, `with-formatting`)"
 		></div>
 
 		<div class="static-class" :class="b('static')"></div>
