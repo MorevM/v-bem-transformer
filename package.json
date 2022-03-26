@@ -58,7 +58,7 @@
 		"unplugin": "^0.6.0"
 	},
 	"devDependencies": {
-		"@morev/commitlint-config": "^0.1.0",
+		"@morev/commitlint-config": "^0.1.1",
 		"@morev/eslint-config": "^8.1.0",
 		"@release-it/conventional-changelog": "^4.1.0",
 		"@rollup/plugin-commonjs": "^21.0.2",
