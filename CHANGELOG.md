@@ -1,6 +1,18 @@
 
 
-### [0.0.4](https://github.com/MorevM/v-bem-transformer/compare/v0.0.3...v0.0.4) (2022-03-12)
+### [0.0.5](https://github.com/MorevM/v-bem-transformer/compare/v0.0.4...v0.0.5) (2022-03-26)
+
+
+### Chores
+
+* bump @morev/eslint-config from 8.1.0 to 8.2.0 ([#19](https://github.com/MorevM/v-bem-transformer/issues/19)) ([1868146](https://github.com/MorevM/v-bem-transformer/commit/1868146192eab2d82f3e1efa28bf415e5ed866c5))
+* bump eslint from 8.11.0 to 8.12.0 ([#25](https://github.com/MorevM/v-bem-transformer/issues/25)) ([e7bff08](https://github.com/MorevM/v-bem-transformer/commit/e7bff08e6a46e57508a163a8981303f3b5d2d839))
+* bump lint-staged from 12.3.5 to 12.3.7 ([#22](https://github.com/MorevM/v-bem-transformer/issues/22)) ([800aeba](https://github.com/MorevM/v-bem-transformer/commit/800aebaf80f7efa186ef417b710f2aeef36ef1f7))
+* bump release-it from 14.12.5 to 14.13.1 ([#24](https://github.com/MorevM/v-bem-transformer/issues/24)) ([140d8d0](https://github.com/MorevM/v-bem-transformer/commit/140d8d0a0c103e63b5c330dc45471f1923ad75f8))
+* bump rollup from 2.70.0 to 2.70.1 ([#20](https://github.com/MorevM/v-bem-transformer/issues/20)) ([77a38cb](https://github.com/MorevM/v-bem-transformer/commit/77a38cba8463121dcde9f1d8b42f8f34d51944d3))
+* bump unplugin from 0.4.0 to 0.5.2 ([#21](https://github.com/MorevM/v-bem-transformer/issues/21)) ([278e917](https://github.com/MorevM/v-bem-transformer/commit/278e917dbc00f6b91122a250ce822721c8ca2f13))
+* bump unplugin from 0.5.2 to 0.6.0 ([#23](https://github.com/MorevM/v-bem-transformer/issues/23)) ([4fd9436](https://github.com/MorevM/v-bem-transformer/commit/4fd94366584472f8c4909823aa8a1028daf3f033))
+* Update dependabot settings ([867c4c1](https://github.com/MorevM/v-bem-transformer/commit/867c4c18505cfdab794c99eea6446290901306b8))### [0.0.4](https://github.com/MorevM/v-bem-transformer/compare/v0.0.3...v0.0.4) (2022-03-12)
 
 
 ### Bug fixes
