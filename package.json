@@ -26,31 +26,31 @@
 	],
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
+			"import": "./dist/index.mjs",
 			"require": "./dist/index.cjs"
 		},
 		"./bundlers": {
-			"import": "./dist/bundlers.js",
+			"import": "./dist/bundlers.mjs",
 			"require": "./dist/bundlers.cjs"
 		},
 		"./vue": {
-			"import": "./dist/vue.js",
+			"import": "./dist/vue.mjs",
 			"require": "./dist/vue.cjs"
 		},
 		"./nuxt": {
-			"import": "./dist/nuxt.js",
+			"import": "./dist/nuxt.mjs",
 			"require": "./dist/nuxt.cjs"
 		}
 	},
 	"main": "./dist/index.cjs",
-	"module": "./dist/index.js",
+	"module": "./dist/index.mjs",
 	"scripts": {
 		"prepare": "husky install ./.husky",
 		"vscode-settings": "cp .vscode/settings.template.json .vscode/settings.json",
 		"lint": "eslint \"**/*.{js,yml,yaml,json,json5,jsonc}\"",
 		"lint:fix": "yarn lint --fix",
 		"test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
-		"build": "rollup -c",
+		"build": "unbuild",
 		"release": "release-it --disable-metrics"
 	},
 	"dependencies": {
@@ -68,8 +68,6 @@
 		"jest": "^27.5.1",
 		"lint-staged": "^12.3.4",
 		"release-it": "^14.14.0",
-		"rollup": "^2.68.0",
-		"rollup-plugin-copy": "^3.4.0",
-		"rollup-plugin-terser": "^7.0.2"
+		"unbuild": "^0.7.2"
 	}
 }
