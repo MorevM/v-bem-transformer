@@ -1,6 +1,31 @@
 
 
-### [0.0.5](https://github.com/MorevM/v-bem-transformer/compare/v0.0.4...v0.0.5) (2022-03-26)
+## [1.0.0](https://github.com/MorevM/v-bem-transformer/compare/v0.0.5...v1.0.0) (2022-04-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* Build mechanics have changed significantly with the introduction of new builder and `@nuxt/kit`.
+Although there shouldn't be any problems, the update is marked as a major to avoid embarrassment.
+
+### Features
+
+* Add universal nuxt mapping using `@nuxt/kit` ([3b6ea6e](https://github.com/MorevM/v-bem-transformer/commit/3b6ea6e6ca47f2dfda7eb6b8a2fea03c21574ec1))
+
+
+### Bug fixes
+
+* Correct defaults ([ea23f01](https://github.com/MorevM/v-bem-transformer/commit/ea23f01a53ebadf51a08feef2c61dd23c2725dd5))
+
+
+### Chores
+
+* bump @morev/commitlint-config from 0.1.0 to 0.1.1 ([#27](https://github.com/MorevM/v-bem-transformer/issues/27)) ([a2d239b](https://github.com/MorevM/v-bem-transformer/commit/a2d239b80742c3ed73932b2144dba860775c8be8))
+* bump @morev/eslint-config from 8.2.0 to 10.0.3 ([#28](https://github.com/MorevM/v-bem-transformer/issues/28)) ([ae3a015](https://github.com/MorevM/v-bem-transformer/commit/ae3a0158b2302decd4c3af87cdf7ad6c779ba9f3))
+* bump @rollup/plugin-commonjs from 21.0.2 to 21.0.3 ([#31](https://github.com/MorevM/v-bem-transformer/issues/31)) ([ee9cec6](https://github.com/MorevM/v-bem-transformer/commit/ee9cec69ff4f5e9efb39e09629fb47dc3b84b58d))
+* bump release-it from 14.13.1 to 14.14.0 ([#30](https://github.com/MorevM/v-bem-transformer/issues/30)) ([f2a8360](https://github.com/MorevM/v-bem-transformer/commit/f2a836094724f9abf7c040fb19c55f38d9092ec2))
+* bump unplugin from 0.6.0 to 0.6.1 ([#29](https://github.com/MorevM/v-bem-transformer/issues/29)) ([c1f159e](https://github.com/MorevM/v-bem-transformer/commit/c1f159ebd9d2b71b5912f9927a1eff9daaed814e))
+* Migrate to `unbuild` ([c53279d](https://github.com/MorevM/v-bem-transformer/commit/c53279dd962d6007480344ff3780f15a3f17c33d))### [0.0.5](https://github.com/MorevM/v-bem-transformer/compare/v0.0.4...v0.0.5) (2022-03-26)
 
 
 ### Chores
