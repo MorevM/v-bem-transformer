@@ -1,21 +1,43 @@
-import { resolve } from 'path';
-import { unplugin } from './bundlers.js';
+import {
+	addPluginTemplate,
+	createResolver,
+	defineNuxtModule,
+	extendViteConfig,
+	extendWebpackConfig,
+	isNuxt2,
+} from '@nuxt/kit';
 
-export default function nuxtModule(options) {
-	// Webpack 4
-	this.extendBuild((config) => {
-		config.plugins = config.plugins || [];
-		config.plugins.unshift(unplugin.webpack(options));
-	});
-	// Vite
-	this.nuxt.hook('vite:extend', async (vite) => {
-		vite.config.plugins = vite.config.plugins || [];
-		vite.config.plugins.push(unplugin.vite(options));
-	});
-	// Plugin
-	this.addPlugin({
-		src: resolve(__dirname, '_nuxt-plugin.js'),
-		fileName: 'v-bem-plugin.js',
-		options,
-	});
-}
+import { unplugin } from './bundlers.js';
+import { defaultOptions } from './_defaults.js';
+
+export default defineNuxtModule({
+	meta: {
+		name: '@morev/v-bem-transformer',
+		configKey: 'vBemTransformer',
+		compatibility: {},
+	},
+	defaults: defaultOptions,
+	hooks: {},
+	async setup(options, nuxt) {
+		const resolver = createResolver(import.meta.url);
+
+		extendWebpackConfig((config) => {
+			config.plugins = config.plugins || [];
+			config.plugins.unshift(unplugin.webpack(options));
+		});
+
+		extendViteConfig((config) => {
+			config.plugins = config.plugins || [];
+			config.plugins.push(unplugin.vite(options));
+		});
+
+		addPluginTemplate({
+			src: resolver.resolve('_nuxt-plugin.js'),
+			filename: 'v-bem-plugin.js',
+			options: {
+				options,
+				isNuxt2: isNuxt2(),
+			},
+		});
+	},
+});
