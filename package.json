@@ -69,6 +69,6 @@
 		"jest": "^27.5.1",
 		"lint-staged": "^12.3.4",
 		"release-it": "^14.14.0",
-		"unbuild": "^0.7.2"
+		"unbuild": "^0.7.4"
 	}
 }
