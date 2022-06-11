@@ -1,5 +1,30 @@
 
 
+### [1.0.1](https://github.com/MorevM/v-bem-transformer/compare/v1.0.0...v1.0.1) (2022-06-11)
+
+
+### Chores
+
+* bump @morev/eslint-config from 10.0.3 to 11.1.0 ([#34](https://github.com/MorevM/v-bem-transformer/issues/34)) ([360f0fb](https://github.com/MorevM/v-bem-transformer/commit/360f0fb104e379b7c6852a10e7536ddece15beb7))
+* bump @morev/eslint-config from 11.1.0 to 11.1.1 ([#41](https://github.com/MorevM/v-bem-transformer/issues/41)) ([98322a4](https://github.com/MorevM/v-bem-transformer/commit/98322a4d38b988cc690225edd71e3b31c2f05754))
+* bump @morev/eslint-config from 11.1.1 to 11.1.2 ([#42](https://github.com/MorevM/v-bem-transformer/issues/42)) ([5033aea](https://github.com/MorevM/v-bem-transformer/commit/5033aea4b1433e727d089f4bcc589dbfc4a655a8))
+* bump @morev/helpers from 0.14.1 to 0.15.0 ([#43](https://github.com/MorevM/v-bem-transformer/issues/43)) ([820afb5](https://github.com/MorevM/v-bem-transformer/commit/820afb57d17ec14d0775a7587a3c0bfb69919f84))
+* bump @morev/helpers from 0.9.0 to 0.14.1 ([#40](https://github.com/MorevM/v-bem-transformer/issues/40)) ([06a0077](https://github.com/MorevM/v-bem-transformer/commit/06a0077259cb6663ed68f8935d9f94c61d14d828))
+* bump @release-it/conventional-changelog from 4.2.2 to 4.3.0 ([#36](https://github.com/MorevM/v-bem-transformer/issues/36)) ([0558113](https://github.com/MorevM/v-bem-transformer/commit/05581133caf56b17d5d41fde05f9d06929564238))
+* bump eslint from 8.12.0 to 8.13.0 ([#33](https://github.com/MorevM/v-bem-transformer/issues/33)) ([aeaecf1](https://github.com/MorevM/v-bem-transformer/commit/aeaecf1c0d8a2c3122eebcae8e4dee740e44bb03))
+* bump eslint from 8.13.0 to 8.14.0 ([#44](https://github.com/MorevM/v-bem-transformer/issues/44)) ([92142c7](https://github.com/MorevM/v-bem-transformer/commit/92142c748a72c41bc9513e98905c4c1fec015352))
+* bump eslint from 8.14.0 to 8.17.0 ([#65](https://github.com/MorevM/v-bem-transformer/issues/65)) ([9dff564](https://github.com/MorevM/v-bem-transformer/commit/9dff564a0321502b8ef22fe814e4fe9b60df16a3))
+* bump husky from 7.0.4 to 8.0.1 ([#55](https://github.com/MorevM/v-bem-transformer/issues/55)) ([26fe82d](https://github.com/MorevM/v-bem-transformer/commit/26fe82d64d7a4dc4c9ad81042e8fecfbb8e64443))
+* bump lint-staged from 12.3.7 to 12.3.8 ([#39](https://github.com/MorevM/v-bem-transformer/issues/39)) ([96e6674](https://github.com/MorevM/v-bem-transformer/commit/96e66741a0c1690fe22be2c69c4a1d87b4a42878))
+* bump lint-staged from 12.3.8 to 12.4.0 ([#45](https://github.com/MorevM/v-bem-transformer/issues/45)) ([1d6a687](https://github.com/MorevM/v-bem-transformer/commit/1d6a687c41e921bb74d3cd65df463076c54589d5))
+* bump lint-staged from 12.4.0 to 12.4.1 ([#50](https://github.com/MorevM/v-bem-transformer/issues/50)) ([f439eab](https://github.com/MorevM/v-bem-transformer/commit/f439eab39d7d35f716678b5857e2573be258bce6))
+* bump release-it from 14.14.0 to 14.14.2 ([#35](https://github.com/MorevM/v-bem-transformer/issues/35)) ([1d7f700](https://github.com/MorevM/v-bem-transformer/commit/1d7f700e13e7677e57c0ab0d786c43ac5cb4d931))
+* bump release-it from 14.14.2 to 14.14.3 ([#47](https://github.com/MorevM/v-bem-transformer/issues/47)) ([812f1bb](https://github.com/MorevM/v-bem-transformer/commit/812f1bb4a3aaedc99f8912b59580b26d7037a0fb))
+* bump unbuild from 0.7.2 to 0.7.4 ([#37](https://github.com/MorevM/v-bem-transformer/issues/37)) ([e6d53ab](https://github.com/MorevM/v-bem-transformer/commit/e6d53ab8c37099f3edcd17a866168cf8a22f111a))
+* bump unplugin from 0.6.1 to 0.6.2 ([#38](https://github.com/MorevM/v-bem-transformer/issues/38)) ([ef27119](https://github.com/MorevM/v-bem-transformer/commit/ef271196ea489828a5c8f6b4043dec7951d810a0))
+* bump unplugin from 0.6.2 to 0.7.0 ([#70](https://github.com/MorevM/v-bem-transformer/issues/70)) ([2038cfc](https://github.com/MorevM/v-bem-transformer/commit/2038cfc54e0c6762e8dc9723f82d768174804cfd))
+* Deps update ([f45c5fa](https://github.com/MorevM/v-bem-transformer/commit/f45c5fabbca764e9b5010e5b133d2e62101d06f4))
+
 ## [1.0.0](https://github.com/MorevM/v-bem-transformer/compare/v0.0.5...v1.0.0) (2022-04-09)
 
 
