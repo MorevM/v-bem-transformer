@@ -54,23 +54,22 @@
 		"release": "release-it --disable-metrics"
 	},
 	"dependencies": {
-		"@morev/helpers": "^0.15.0",
-		"@morev/more-bem-classnames": "^1.0.2",
+		"@morev/helpers": "^0.19.2",
+		"@morev/more-bem-classnames": "^1.0.3",
 		"@nuxt/kit": "npm:@nuxt/kit-edge@latest",
 		"unplugin": "^0.7.0"
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.1.1",
-		"@morev/eslint-config": "^11.1.2",
-		"@release-it/conventional-changelog": "^4.3.0",
-		"@types/jest": "^27.4.1",
-		"eslint": "^8.14.0",
-		"husky": "^8.0.1",
+		"@morev/eslint-config": "^12.2.0",
+		"@release-it/conventional-changelog": "^5.0.0",
+		"@types/jest": "^28.1.1",
 		"eslint": "^8.17.0",
 		"husky": "^8.0.1",
-		"jest": "^27.5.1",
-		"lint-staged": "^12.4.1",
-		"release-it": "^14.14.3",
+		"jest": "^28.1.1",
+		"jest-environment-jsdom": "^28.1.1",
+		"lint-staged": "^13.0.1",
+		"release-it": "^15.0.0",
 		"unbuild": "^0.7.4"
 	}
 }
