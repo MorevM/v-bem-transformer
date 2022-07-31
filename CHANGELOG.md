@@ -1,5 +1,26 @@
 
 
+### [1.0.2](https://github.com/MorevM/v-bem-transformer/compare/v1.0.1...v1.0.2) (2022-07-31)
+
+
+### Chores
+
+* bump @morev/helpers from 0.19.2 to 0.20.0 ([#73](https://github.com/MorevM/v-bem-transformer/issues/73)) ([a1d8297](https://github.com/MorevM/v-bem-transformer/commit/a1d829743e95b35b9470cd736ea7a44725de9ce6))
+* bump @types/jest from 28.1.1 to 28.1.2 ([#74](https://github.com/MorevM/v-bem-transformer/issues/74)) ([263fb14](https://github.com/MorevM/v-bem-transformer/commit/263fb14ba9a10be555a27bbf132ce7455f95f4e1))
+* bump eslint from 8.17.0 to 8.18.0 ([#76](https://github.com/MorevM/v-bem-transformer/issues/76)) ([fee9d20](https://github.com/MorevM/v-bem-transformer/commit/fee9d207224114e8186687941b2f09c8cf830d78))
+* bump lint-staged from 13.0.1 to 13.0.2 ([#75](https://github.com/MorevM/v-bem-transformer/issues/75)) ([30e0ce8](https://github.com/MorevM/v-bem-transformer/commit/30e0ce80ab52672041db2cef1c12afe4e0409e88))
+* Deps update ([97c2614](https://github.com/MorevM/v-bem-transformer/commit/97c2614775cf9973f3f6a381a4d813b47af5b201))
+
+
+### Bug fixes
+
+* Fix RegExp to cover case with `>` character within element tag ([42a4496](https://github.com/MorevM/v-bem-transformer/commit/42a4496cb0a354929894c348217f3825b3f686ca))
+
+
+### Tests
+
+* Add test case with `>` character within element declaration ([ac2dfa2](https://github.com/MorevM/v-bem-transformer/commit/ac2dfa235cde0c0a7b720f108f6a96db784ecf45))
+
 ### [1.0.1](https://github.com/MorevM/v-bem-transformer/compare/v1.0.0...v1.0.1) (2022-06-11)
 
 
