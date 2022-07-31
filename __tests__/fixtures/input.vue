@@ -2,6 +2,7 @@
 <template>
 	<div v-if="someCondition > 0" v-bem>
 		<div v-if="someCondition >= ''" v-bem="modifiers"></div>
+		<div v-if="someCondition <= ''" v-bem="modifiers" v-another="a < b"></div>
 		<div v-bem="{ inline: 'modifiers' }"></div>
 		<div v-bem='{ inline: "modifiers" }'></div>
 		<div

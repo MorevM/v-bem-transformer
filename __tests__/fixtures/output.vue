@@ -2,6 +2,7 @@
 <template>
 	<div v-if="someCondition > 0" :class="b(null)">
 		<div v-if="someCondition >= ''" :class="b(null, modifiers)"></div>
+		<div v-if="someCondition <= ''" :class="b(null, modifiers)" v-another="a < b"></div>
 		<div :class="b(null, { inline: 'modifiers' })"></div>
 		<div :class="b(null, { inline: 'modifiers' })"></div>
 		<div
