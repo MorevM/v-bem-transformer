@@ -1,6 +1,9 @@
-<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names -->
+<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names, vue/no-undef-components, max-len -->
 <template>
-	<div v-if="someCondition > 0" v-bem>
+	<some-component v-if="someCondition > 0" v-bem>
+		<template #test>
+			<div v-bem:inner></div>
+		</template>
 		<div v-if="someCondition >= ''" v-bem="modifiers"></div>
 		<div v-bem="{ inline: 'modifiers' }"></div>
 		<div v-bem='{ inline: "modifiers" }'></div>
@@ -40,5 +43,5 @@
 
 		<div v-bem:smth="{ reverseOrder: 1 }" :class="dynamicClass"></div>
 		<div v-bem:smth.static="{ reverseOrder: 1 }" :class="[dynamicClassAsArray]"></div>
-	</div>
+	</some-component>
 </template>
