@@ -1,5 +1,22 @@
 
 
+### [1.0.4](https://github.com/MorevM/v-bem-transformer/compare/v1.0.3...v1.0.4) (2022-08-01)
+
+
+### Chores
+
+* bump eslint from 8.20.0 to 8.21.0 ([8e59a68](https://github.com/MorevM/v-bem-transformer/commit/8e59a68a2a77953bc825215f147ec7bc32000e78))
+
+
+### Bug fixes
+
+* Revert RegExp change since it doesn't respect components nesting ([3cbb488](https://github.com/MorevM/v-bem-transformer/commit/3cbb4884169e7df2a8e136de45ef863c2e38cba9))
+
+
+### Tests
+
+* Add nested components test ([3467655](https://github.com/MorevM/v-bem-transformer/commit/34676552bc02f521c677dea4b0bd3a4a600a2f68))
+
 ### [1.0.3](https://github.com/MorevM/v-bem-transformer/compare/v1.0.2...v1.0.3) (2022-08-01)
 
 
