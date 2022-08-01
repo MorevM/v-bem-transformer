@@ -1,5 +1,12 @@
 
 
+### [1.0.3](https://github.com/MorevM/v-bem-transformer/compare/v1.0.2...v1.0.3) (2022-08-01)
+
+
+### Bug fixes
+
+* Correct imports after `@morev/helpers` update ([4c06c33](https://github.com/MorevM/v-bem-transformer/commit/4c06c3314051f3bbd872ce29dd45d06bbac01ef5))
+
 ### [1.0.2](https://github.com/MorevM/v-bem-transformer/compare/v1.0.1...v1.0.2) (2022-07-31)
 
 
