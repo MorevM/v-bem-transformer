@@ -7077,10 +7077,10 @@ unplugin@^0.6.1:
     webpack-sources "^3.2.3"
     webpack-virtual-modules "^0.4.3"
 
-unplugin@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.8.0.tgz#aeabac40e89fb69e5c9366b4821c3836d1b6ffce"
-  integrity sha512-OzOkJ9XOPlD1Cph6qy/p4i/KSUbs76GToXjH/STHpfo6D7y+EqpfAL6G6HaoOw5QLkt9+KWwcxYUmPFkDf1upQ==
+unplugin@^0.8.0, unplugin@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.8.1.tgz#4517b6a8ec3d944e838f9c346921d9777cd159e1"
+  integrity sha512-o7rUZoPLG1fH4LKinWgb77gDtTE6mw/iry0Pq0Z5UPvZ9+HZ1/4+7fic7t58s8/CGkPrDpGq+RltO+DmswcR4g==
   dependencies:
     acorn "^8.8.0"
     chokidar "^3.5.3"
