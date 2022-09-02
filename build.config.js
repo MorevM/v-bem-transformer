@@ -15,4 +15,5 @@ export default {
 			execSync('cp ./src/_nuxt-plugin.js ./dist/_nuxt-plugin.js');
 		},
 	},
+	failOnWarn: false,
 };
