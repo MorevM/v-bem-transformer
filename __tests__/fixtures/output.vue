@@ -5,6 +5,8 @@
 			<div :class="b('inner')"></div>
 		</template>
 		<div v-if="someCondition >= ''" :class="b(null, modifiers)"></div>
+		<div v-if="someCondition <= ''" :class="b(null, modifiers)"></div>
+		<div v-if="someCondition < 123" :class="b(null, modifiers)"></div>
 		<div :class="b(null, { inline: 'modifiers' })"></div>
 		<div :class="b(null, { inline: 'modifiers' })"></div>
 		<div

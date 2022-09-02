@@ -5,6 +5,8 @@
 			<div v-bem:inner></div>
 		</template>
 		<div v-if="someCondition >= ''" v-bem="modifiers"></div>
+		<div v-if="someCondition <= ''" v-bem="modifiers"></div>
+		<div v-if="someCondition < 123" v-bem="modifiers"></div>
 		<div v-bem="{ inline: 'modifiers' }"></div>
 		<div v-bem='{ inline: "modifiers" }'></div>
 		<div
