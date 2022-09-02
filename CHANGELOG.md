@@ -1,5 +1,33 @@
 
 
+## [1.1.0](https://github.com/MorevM/v-bem-transformer/compare/v1.0.4...v1.1.0) (2022-09-02)
+
+
+### Features
+
+* Add `useBemFactory` for usage with Composition API ([51f1bd2](https://github.com/MorevM/v-bem-transformer/commit/51f1bd2d154f2827d5cceafceebe2a639adc89af))
+* **nuxt:** Add auto-imported composable to Nuxt 3 ([f9130e5](https://github.com/MorevM/v-bem-transformer/commit/f9130e5e4f92829f2fe2ce7db26bd17ce5973d7c))
+
+
+### Tests
+
+* Add test case with `<` character within tag ([5e18ed9](https://github.com/MorevM/v-bem-transformer/commit/5e18ed939fcefd54a75a48bfc415365ee2898600))
+
+
+### Bug fixes
+
+* Correctly parse `v-bem` if `<` character present ([442c3af](https://github.com/MorevM/v-bem-transformer/commit/442c3afaece8a632779d0f3621938df52973f7a3))
+
+
+### Chores
+
+* bump @morev/eslint-config from 15.2.0 to 15.3.0 ([#105](https://github.com/MorevM/v-bem-transformer/issues/105)) ([01ee16b](https://github.com/MorevM/v-bem-transformer/commit/01ee16b4cdc77926e4523badf445a7aeeed674b6))
+* bump release-it from 15.2.0 to 15.3.0 ([#106](https://github.com/MorevM/v-bem-transformer/issues/106)) ([2f7ce9b](https://github.com/MorevM/v-bem-transformer/commit/2f7ce9bbbadf7facef7bdef08276d6741aa7b663))
+* bump unbuild from 0.7.6 to 0.8.8 ([#104](https://github.com/MorevM/v-bem-transformer/issues/104)) ([2d7f2db](https://github.com/MorevM/v-bem-transformer/commit/2d7f2db58e8b7ae41334cc8ae84de7687030ffa1))
+* bump unplugin from 0.8.0 to 0.9.0 ([#103](https://github.com/MorevM/v-bem-transformer/issues/103)) ([d4f4c82](https://github.com/MorevM/v-bem-transformer/commit/d4f4c8207d1bc38066e2e4e6ef7b28ce5e5781f9))
+* Set `@nuxt/kit` version rc.8 ([b0aa114](https://github.com/MorevM/v-bem-transformer/commit/b0aa114df33b51c5de1e01dc5a5adb34a4db2ddb))
+* Upgrade deps ([1b16c7d](https://github.com/MorevM/v-bem-transformer/commit/1b16c7db89e245e3c5673b92d4ec79706248ac5a))
+
 ### [1.0.4](https://github.com/MorevM/v-bem-transformer/compare/v1.0.3...v1.0.4) (2022-08-01)
 
 
