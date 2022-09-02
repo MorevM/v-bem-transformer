@@ -14,4 +14,5 @@ export const defaultOptions = {
 	blockName: 'name',
 	priorityBlockName: 'block',
 	fallbackBlockName: 'unknown',
+	composableName: 'useBem',
 };
