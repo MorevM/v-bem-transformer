@@ -40,6 +40,10 @@
 		"./nuxt": {
 			"import": "./dist/nuxt.mjs",
 			"require": "./dist/nuxt.cjs"
+		},
+		"./use-bem-factory": {
+			"import": "./dist/use-bem-factory.mjs",
+			"require": "./dist/use-bem-factory.cjs"
 		}
 	},
 	"main": "./dist/index.cjs",
@@ -70,6 +74,7 @@
 		"jest-environment-jsdom": "^29.0.1",
 		"lint-staged": "^13.0.3",
 		"release-it": "^15.4.1",
-		"unbuild": "^0.8.10"
+		"unbuild": "^0.8.10",
+		"vue": "^3.2.38"
 	}
 }
