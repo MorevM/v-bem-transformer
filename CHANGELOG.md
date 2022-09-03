@@ -1,5 +1,12 @@
 
 
+### [1.1.1](https://github.com/MorevM/v-bem-transformer/compare/v1.1.0...v1.1.1) (2022-09-03)
+
+
+### Bug fixes
+
+* **nuxt:** Correct composable import ([b031491](https://github.com/MorevM/v-bem-transformer/commit/b0314916c0d3c024191f7b674c2117c7efc38921))
+
 ## [1.1.0](https://github.com/MorevM/v-bem-transformer/compare/v1.0.4...v1.1.0) (2022-09-02)
 
 
