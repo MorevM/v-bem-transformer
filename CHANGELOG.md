@@ -1,5 +1,12 @@
 
 
+### [1.1.3](https://github.com/MorevM/v-bem-transformer/compare/v1.1.2...v1.1.3) (2022-09-03)
+
+
+### Bug fixes
+
+* **nuxt:** Replace `push` with `unshift` for vite config ([1820fc6](https://github.com/MorevM/v-bem-transformer/commit/1820fc65f8776f055e0bba07eff10235978724da))
+
 ### [1.1.2](https://github.com/MorevM/v-bem-transformer/compare/v1.1.1...v1.1.2) (2022-09-03)
 
 
