@@ -1,5 +1,12 @@
 
 
+### [1.1.2](https://github.com/MorevM/v-bem-transformer/compare/v1.1.1...v1.1.2) (2022-09-03)
+
+
+### Chores
+
+* Fix `unplugin` version to `0.7.2` since the following are broken ([45fddab](https://github.com/MorevM/v-bem-transformer/commit/45fddabd8697df472d87a5780fddfdde1a46d07f))
+
 ### [1.1.1](https://github.com/MorevM/v-bem-transformer/compare/v1.1.0...v1.1.1) (2022-09-03)
 
 
