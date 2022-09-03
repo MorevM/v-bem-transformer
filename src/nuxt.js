@@ -31,7 +31,7 @@ export default defineNuxtModule({
 
 		extendViteConfig((config) => {
 			config.plugins = config.plugins || [];
-			config.plugins.push(unplugin.vite(options));
+			config.plugins.unshift(unplugin.vite(options));
 		});
 
 		addPluginTemplate({
