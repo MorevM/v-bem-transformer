@@ -1,5 +1,5 @@
 import {
-	addAutoImport,
+	addImports,
 	addPluginTemplate,
 	addTemplate,
 	createResolver,
@@ -59,7 +59,7 @@ export default defineNuxtModule({
 				].join('\n'),
 			}).dst;
 
-			addAutoImport({ name: 'useBem', as: options.composableName, from: useBemPath });
+			addImports({ name: 'useBem', as: options.composableName, from: useBemPath });
 		}
 	},
 });
