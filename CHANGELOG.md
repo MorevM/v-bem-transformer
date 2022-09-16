@@ -1,5 +1,14 @@
 
 
+### [1.1.4](https://github.com/MorevM/v-bem-transformer/compare/v1.1.3...v1.1.4) (2022-09-16)
+
+
+### Chores
+
+* bump @morev/eslint-config from 16.0.0 to 17.1.1 ([d846701](https://github.com/MorevM/v-bem-transformer/commit/d8467019d1d2de77939db0fb7908ee9a43ce5959))
+* bump @morev/helpers from 1.4.0 to 1.4.2 ([c86a59a](https://github.com/MorevM/v-bem-transformer/commit/c86a59a89eca5e0911b1beb6b4c0921cef0b7578))
+* Upgrade `@nuxt/kit` to rc.10 ([d15ff93](https://github.com/MorevM/v-bem-transformer/commit/d15ff932a9eed9136e4b3dea5356832955f290ab))
+
 ### [1.1.3](https://github.com/MorevM/v-bem-transformer/compare/v1.1.2...v1.1.3) (2022-09-03)
 
 
