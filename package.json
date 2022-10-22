@@ -61,7 +61,7 @@
 		"@morev/helpers": "^1.4.2",
 		"@morev/more-bem-classnames": "^1.0.3",
 		"@nuxt/kit": "3.0.0-rc.10",
-		"unplugin": "0.7.2"
+		"unplugin": "0.10.0"
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.1.1",
