@@ -12,6 +12,6 @@ const output = fs.readFileSync(resolve(__dirname, './fixtures/output.vue'), { en
 
 describe('realization', () => {
 	it('works', () => {
-		expect(transformer(input, 'v-bem')).toStrictEqual(output);
+		expect(transformer(input, 'v-bem').code).toStrictEqual(output);
 	});
 });
