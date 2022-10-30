@@ -1,5 +1,17 @@
 
 
+## [1.2.0](https://github.com/MorevM/v-bem-transformer/compare/v1.1.4...v1.2.0) (2022-10-30)
+
+
+### Features
+
+* Provide a sourcemap for transformation ([e29bfac](https://github.com/MorevM/v-bem-transformer/commit/e29bfac117f2e4a19c5b29e4d5b4a88b8a618599))
+
+
+### Refactoring
+
+* Rewrite the code to use `MagicString` as "formatter" ([86ade16](https://github.com/MorevM/v-bem-transformer/commit/86ade165be4d9b530d43786be575374da304537c))
+
 ### [1.1.4](https://github.com/MorevM/v-bem-transformer/compare/v1.1.3...v1.1.4) (2022-09-16)
 
 
