@@ -1,5 +1,12 @@
 
 
+### [1.2.1](https://github.com/MorevM/v-bem-transformer/compare/v1.2.0...v1.2.1) (2022-11-15)
+
+
+### Chores
+
+* Update @nuxt/kit from rc.12 to rc.13 ([32bfe78](https://github.com/MorevM/v-bem-transformer/commit/32bfe78c2fabd4ac3859db71af4ef68d482ed1a0))
+
 ## [1.2.0](https://github.com/MorevM/v-bem-transformer/compare/v1.1.4...v1.2.0) (2022-10-30)
 
 
