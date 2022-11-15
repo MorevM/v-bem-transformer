@@ -62,7 +62,7 @@
 		"@morev/more-bem-classnames": "^1.0.3",
 		"@nuxt/kit": "3.0.0-rc.13",
 		"magic-string": "^0.26.7",
-		"unplugin": "0.7.2"
+		"unplugin": "1.0.0"
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.1.1",
