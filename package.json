@@ -75,7 +75,7 @@
 		"jest-environment-jsdom": "^29.2.2",
 		"lint-staged": "^13.0.3",
 		"release-it": "^15.5.0",
-		"unbuild": "^0.8.10",
+		"unbuild": "^1.0.1",
 		"vue": "^3.2.41"
 	}
 }
