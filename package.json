@@ -61,7 +61,7 @@
 		"@morev/helpers": "^1.13.0",
 		"@morev/more-bem-classnames": "^1.0.3",
 		"@nuxt/kit": "3.0.0-rc.13",
-		"magic-string": "^0.26.7",
+		"magic-string": "^0.27.0",
 		"unplugin": "0.7.2"
 	},
 	"devDependencies": {
