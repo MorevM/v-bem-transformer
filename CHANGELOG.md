@@ -1,5 +1,17 @@
 
 
+## [1.2.2](https://github.com/MorevM/v-bem-transformer/compare/v1.2.1...v1.2.2) (2023-05-17)
+
+
+### Chores
+
+* Bump `@nuxt/kit` to 3.5.0 ([fff6b3b](https://github.com/MorevM/v-bem-transformer/commit/fff6b3b3b950868e56fb7251cd694c2bd23a1719))
+
+### Bug fixes
+
+* **nuxt:** Enforce Vite plugin to be prepended ([f5850c9](https://github.com/MorevM/v-bem-transformer/commit/f5850c9747294405de4a3923c079554390f6e103))
+* **nuxt:** Use less generic `@nuxt/kit` utilities ([9247943](https://github.com/MorevM/v-bem-transformer/commit/92479436ba0866669290f389475dc814ae704095))
+
 ### [1.2.1](https://github.com/MorevM/v-bem-transformer/compare/v1.2.0...v1.2.1) (2022-11-15)
 
 
