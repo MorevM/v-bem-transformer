@@ -1,5 +1,5 @@
 import { createUnplugin } from 'unplugin';
-import { mergeObjects } from '@morev/helpers';
+import { mergeObjects } from '@morev/utils';
 import { transformer } from '../lib/transformer.js';
 import { defaultOptions } from './_defaults.js';
 

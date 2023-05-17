@@ -58,8 +58,8 @@
 		"release": "release-it --disable-metrics"
 	},
 	"dependencies": {
-		"@morev/helpers": "^1.13.0",
 		"@morev/more-bem-classnames": "^1.0.3",
+		"@morev/utils": "^2.1.0",
 		"@nuxt/kit": "3.0.0-rc.13",
 		"magic-string": "^0.26.7",
 		"unplugin": "0.7.2"

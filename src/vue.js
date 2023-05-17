@@ -1,5 +1,5 @@
 import bemClassnames from '@morev/more-bem-classnames';
-import { mergeObjects } from '@morev/helpers';
+import { mergeObjects } from '@morev/utils';
 import { defaultOptions } from './_defaults.js';
 
 export const vuePlugin = (userOptions) => {
