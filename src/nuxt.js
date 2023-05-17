@@ -2,10 +2,10 @@ import {
 	addImports,
 	addPluginTemplate,
 	addTemplate,
+	addVitePlugin,
+	addWebpackPlugin,
 	createResolver,
 	defineNuxtModule,
-	extendViteConfig,
-	extendWebpackConfig,
 	isNuxt2,
 } from '@nuxt/kit';
 
@@ -24,15 +24,8 @@ export default defineNuxtModule({
 		const FOLDER = 'v-bem-transformer/';
 		const resolver = createResolver(import.meta.url);
 
-		extendWebpackConfig((config) => {
-			config.plugins = config.plugins || [];
-			config.plugins.unshift(unplugin.webpack(options));
-		});
-
-		extendViteConfig((config) => {
-			config.plugins = config.plugins || [];
-			config.plugins.unshift(unplugin.vite(options));
-		});
+		addWebpackPlugin(unplugin.webpack(options), { prepend: true });
+		addVitePlugin(unplugin.vite(options), { prepend: true });
 
 		addPluginTemplate({
 			src: resolver.resolve('_nuxt-plugin.js'),
