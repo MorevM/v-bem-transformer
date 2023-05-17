@@ -25,7 +25,10 @@ export default defineNuxtModule({
 		const resolver = createResolver(import.meta.url);
 
 		addWebpackPlugin(unplugin.webpack(options), { prepend: true });
-		addVitePlugin(unplugin.vite(options), { prepend: true });
+		addVitePlugin({
+			...unplugin.vite(options),
+			enforce: 'pre',
+		}, { prepend: true });
 
 		addPluginTemplate({
 			src: resolver.resolve('_nuxt-plugin.js'),
