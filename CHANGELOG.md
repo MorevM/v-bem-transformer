@@ -1,5 +1,12 @@
 
 
+## [1.2.3](https://github.com/MorevM/v-bem-transformer/compare/v1.2.2...v1.2.3) (2024-01-12)
+
+
+### Chores
+
+* Upgrade some deps ([c8fe296](https://github.com/MorevM/v-bem-transformer/commit/c8fe296060cae68741759aa8856a63601d1e7b89))
+
 ## [1.2.2](https://github.com/MorevM/v-bem-transformer/compare/v1.2.1...v1.2.2) (2023-05-17)
 
 
