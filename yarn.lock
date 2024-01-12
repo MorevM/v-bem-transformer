@@ -1111,17 +1111,21 @@
     vue-eslint-parser "^9.2.0"
     yaml-eslint-parser "^1.2.0"
 
-"@morev/helpers@^0.19.2":
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/@morev/helpers/-/helpers-0.19.2.tgz#e8a5d31ca641ef4534d298379efb44f8503e9ae3"
-  integrity sha512-uEeNAYpP8Zzaa6JSbdqAK5CrFvW8nlc8Jk5xq6z9N4cVGZ8rl5ectxNl9+wPp/yNjbQoiaZT9A3oH9HBU7KYJQ==
-
-"@morev/more-bem-classnames@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@morev/more-bem-classnames/-/more-bem-classnames-1.0.3.tgz#8df5dae1a33a87a6b15b6fbd16e1c31a393d83d1"
-  integrity sha512-oen77cdQ8tgw3FlcLszQzTzysbuY8SgnKbDtYN685otj3RlNodlKdNhfJU2GDu+GL5EzaZExVxbUf8MyrNmNgA==
+"@morev/helpers@^1.19.2":
+  version "1.19.2"
+  resolved "https://registry.yarnpkg.com/@morev/helpers/-/helpers-1.19.2.tgz#7e3291965ce07f96bb83cec959e4b441102bf463"
+  integrity sha512-NZTaLMWp1ewJiyeTpvbWl/swpPxJX7Hc/Mhq/SpsHLyRhYc3MGD15B2FfAYBoOenD17RI7nAAY/RfbrvGSvmyw==
   dependencies:
-    "@morev/helpers" "^0.19.2"
+    fast-copy "^3.0.0"
+    fast-equals "^4.0.3"
+    ohash "^1.0.0"
+
+"@morev/more-bem-classnames@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@morev/more-bem-classnames/-/more-bem-classnames-2.0.0.tgz#7217114758d2c361643fd43ad5dfdc672c3ed463"
+  integrity sha512-BLX/5B9gHc06T3mjkHpmVw13v8vCJK7+hwKG3n++wdLY4Nrc9lYYwrEHxNnaAAHAhN0BBdCFL2rNbR/HbIhI5Q==
+  dependencies:
+    "@morev/helpers" "^1.19.2"
 
 "@morev/utils@^2.1.0":
   version "2.1.0"
@@ -1132,6 +1136,16 @@
     fast-equals "^5.0.1"
     ohash "^1.1.2"
     type-fest "^3.10.0"
+
+"@morev/utils@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@morev/utils/-/utils-3.3.2.tgz#b8c3c671b58382d8d6644c5761c0a53d841aeddf"
+  integrity sha512-oSbls5ll2pnlSOdNVTfRKt6kAH8/17O0Wbz8o1XSfSjVaKCzkas5dcRh43eQJdZ3EufsxaVRX8mB1PmhUcOsgw==
+  dependencies:
+    fast-copy "^3.0.1"
+    fast-equals "^5.0.1"
+    ohash "^1.1.3"
+    type-fest "^4.9.0"
 
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
@@ -4114,7 +4128,7 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-fast-copy@^3.0.1:
+fast-copy@^3.0.0, fast-copy@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-3.0.1.tgz#9e89ef498b8c04c1cd76b33b8e14271658a732aa"
   integrity sha512-Knr7NOtK3HWRYGtHoJrjkaWepqT8thIVGAwt0p0aUs1zqkAzXZV4vo9fFNwyb5fcqK1GKYFYxldQdIDVKhUAfA==
@@ -4123,6 +4137,11 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
+
+fast-equals@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/fast-equals/-/fast-equals-4.0.3.tgz#72884cc805ec3c6679b99875f6b7654f39f0e8c7"
+  integrity sha512-G3BSX9cfKttjr+2o1O22tYMLq0DPluZnYtq1rXumE1SpL/F/SLIfHx08WYQoWSIpeMYf8sRbJ8++71+v6Pnxfg==
 
 fast-equals@^5.0.1:
   version "5.0.1"
@@ -6656,6 +6675,11 @@ object.values@^1.1.6:
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
 
+ohash@^1.0.0, ohash@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/ohash/-/ohash-1.1.3.tgz#f12c3c50bfe7271ce3fd1097d42568122ccdcf07"
+  integrity sha512-zuHHiGTYTA1sYJ/wZN+t5HKZaH23i4yI1HMwbuXm24Nid7Dv0KcuRlKoNKS9UNfAVSBlnGLcuQrnOKWOZoEGaw==
+
 ohash@^1.1.1, ohash@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/ohash/-/ohash-1.1.2.tgz#902dd01484f5573ef941d8f9e81105a2e13fd9ba"
@@ -8287,6 +8311,11 @@ type-fest@^3.10.0:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.10.0.tgz#d75f17a22be8816aea6315ab2739fe1c0c211863"
   integrity sha512-hmAPf1datm+gt3c2mvu0sJyhFy6lTkIGf0GzyaZWxRLnabQfPUqg6tF95RPg6sLxKI7nFLGdFxBcf2/7+GXI+A==
+
+type-fest@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.9.0.tgz#d29c8efe5b1e703feeb29cef23d887b2f479844d"
+  integrity sha512-KS/6lh/ynPGiHD/LnAobrEFq3Ad4pBzOlJ1wAnJx9N4EYoqFhMfLIBjUT2UEx4wg5ZE+cC1ob6DCSpppVo+rtg==
 
 typed-array-length@^1.0.4:
   version "1.0.4"
