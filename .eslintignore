@@ -7,3 +7,6 @@ node_modules
 
 # Lodash templates inside
 src/_nuxt-plugin.js
+
+LICENSE.md
+CHANGELOG.md
