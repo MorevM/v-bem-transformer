@@ -1,5 +1,5 @@
 import { mergeObjects } from '@morev/utils';
-import bemClassnames from '@morev/more-bem-classnames';
+import bemClassnames from '@morev/bem-classnames';
 import { getCurrentInstance } from 'vue';
 import { defaultOptions } from './_defaults.js';
 

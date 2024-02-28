@@ -1,4 +1,4 @@
-import bemClassnames from '@morev/more-bem-classnames';
+import bemClassnames from '@morev/bem-classnames';
 import { mergeObjects } from '@morev/utils';
 import { defaultOptions } from './_defaults.js';
 
