@@ -50,7 +50,6 @@
 	"module": "./dist/index.mjs",
 	"scripts": {
 		"prepare": "husky install ./.husky",
-		"vscode-settings": "cp .vscode/settings.template.json .vscode/settings.json",
 		"lint": "eslint \"**/*.{js,yml,yaml,json,json5,jsonc}\"",
 		"lint:fix": "yarn lint --fix",
 		"test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",

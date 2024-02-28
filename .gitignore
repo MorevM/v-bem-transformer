@@ -1,9 +1,6 @@
 # Artifacts
 dist
 
-# Editors
-.vscode/settings.json
-
 # OS Files
 .DS_Store
 Thumbs.db
