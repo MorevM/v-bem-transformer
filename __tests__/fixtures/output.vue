@@ -1,12 +1,14 @@
-<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names, vue/no-undef-components, max-len -->
+<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names, vue/no-undef-components, @stylistic/js/max-len -->
 <template>
 	<some-component v-if="someCondition > 0" :class="b(null)">
 		<template #test>
 			<div :class="b('inner')"></div>
+			<img :class="b('image')"/>
+			<img :class="b('image2')" />
 		</template>
 		<div v-if="someCondition >= ''" :class="b(null, modifiers)"></div>
 		<div v-if="someCondition <= ''" :class="b(null, modifiers)"></div>
-		<div v-if="someCondition < 123" :class="b(null, modifiers)"></div>
+		<div v-if="someCondition < 123" :class="b(null, modifiers)" ></div>
 		<div :class="b(null, { inline: 'modifiers' })"></div>
 		<div :class="b(null, { inline: 'modifiers' })"></div>
 		<div

@@ -1,12 +1,14 @@
-<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names, vue/no-undef-components, max-len -->
+<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names, vue/no-undef-components, @stylistic/js/max-len -->
 <template>
 	<some-component v-if="someCondition > 0" v-bem>
 		<template #test>
 			<div v-bem:inner></div>
+			<img v-bem:image/>
+			<img v-bem:image2 />
 		</template>
 		<div v-if="someCondition >= ''" v-bem="modifiers"></div>
 		<div v-if="someCondition <= ''" v-bem="modifiers"></div>
-		<div v-if="someCondition < 123" v-bem="modifiers"></div>
+		<div v-if="someCondition < 123" v-bem="modifiers" ></div>
 		<div v-bem="{ inline: 'modifiers' }"></div>
 		<div v-bem='{ inline: "modifiers" }'></div>
 		<div
