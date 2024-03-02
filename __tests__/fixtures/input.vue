@@ -1,10 +1,15 @@
-<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names, vue/no-undef-components, @stylistic/js/max-len -->
 <template>
 	<some-component v-if="someCondition > 0" v-bem>
+		<div>v-bem:content</div>
+		<div class="static class">v-bem</div>
+		<div :class="dynamicClass">v-bem:element</div>
+		<div :class="dynamicClass" v-bem>v-bem:element.static="{ modifiers }"</div>
 		<template #test>
 			<div v-bem:inner></div>
 			<img v-bem:image/>
 			<img v-bem:image2 />
+			<ComponentPascalCase> some content with > and v-bem </ComponentPascalCase>
+			<ComponentPascalCase v-bem:foo> some content with > and v-bem </ComponentPascalCase>
 		</template>
 		<div v-if="someCondition >= ''" v-bem="modifiers"></div>
 		<div v-if="someCondition <= ''" v-bem="modifiers"></div>
@@ -44,6 +49,8 @@
 
 		<div :class="dynamicClass" v-bem:smth="{ test: 1 }"></div>
 		<div :class="[dynamicClassAsArray]" v-bem:smth="{ test: 1 }"></div>
+		<div :class="{ foo: true, bar: dynamic }" v-bem:smth></div>
+		<div :class="['static', dynamic]" v-bem:smth></div>
 
 		<div v-bem:smth="{ reverseOrder: 1 }" :class="dynamicClass"></div>
 		<div v-bem:smth.static="{ reverseOrder: 1 }" :class="[dynamicClassAsArray]"></div>

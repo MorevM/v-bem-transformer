@@ -1,10 +1,15 @@
-<!-- eslint-disable vue/attributes-order, vue/html-closing-bracket-spacing, vue/multi-word-component-names, vue/no-undef-components, @stylistic/js/max-len -->
 <template>
 	<some-component v-if="someCondition > 0" :class="b(null)">
+		<div>v-bem:content</div>
+		<div class="static class">v-bem</div>
+		<div :class="dynamicClass">v-bem:element</div>
+		<div :class="[dynamicClass, b(null)]" >v-bem:element.static="{ modifiers }"</div>
 		<template #test>
 			<div :class="b('inner')"></div>
 			<img :class="b('image')"/>
 			<img :class="b('image2')" />
+			<ComponentPascalCase> some content with > and v-bem </ComponentPascalCase>
+			<ComponentPascalCase :class="b('foo')"> some content with > and v-bem </ComponentPascalCase>
 		</template>
 		<div v-if="someCondition >= ''" :class="b(null, modifiers)"></div>
 		<div v-if="someCondition <= ''" :class="b(null, modifiers)"></div>
@@ -44,6 +49,8 @@
 
 		<div :class="[dynamicClass, b('smth', { test: 1 })]" ></div>
 		<div :class="[dynamicClassAsArray, b('smth', { test: 1 })]" ></div>
+		<div :class="[{ foo: true, bar: dynamic }, b('smth')]" ></div>
+		<div :class="['static', dynamic, b('smth')]" ></div>
 
 		<div  :class="[dynamicClass, b('smth', { reverseOrder: 1 })]"></div>
 		<div  :class="[dynamicClassAsArray, b('smth', { reverseOrder: 1 }, `static`)]"></div>
