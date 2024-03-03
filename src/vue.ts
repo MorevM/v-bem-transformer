@@ -15,7 +15,8 @@ export const vuePlugin = (userOptions: Options) => {
 					this[options.methodName] = bem(
 						this.$options[options.priorityBlockName]
 						|| this.$options[options.blockName]
-						|| this.$options[options.fallbackBlockName],
+						|| this.$options[options.fallbackBlockName]
+						|| this._?.type.__name,
 					);
 				},
 			});
