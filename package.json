@@ -1,6 +1,6 @@
 {
 	"name": "@morev/v-bem-transformer",
-	"description": "Intuitive and performant BEM in Vue files via pseudo-directive",
+	"description": "Intuitive and performant BEM in Vue files via directive syntax",
 	"type": "module",
 	"version": "1.2.3",
 	"private": false,
@@ -26,28 +26,49 @@
 	],
 	"exports": {
 		".": {
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.cjs"
-		},
-		"./bundlers": {
-			"import": "./dist/bundlers.mjs",
-			"require": "./dist/bundlers.cjs"
-		},
-		"./vue": {
-			"import": "./dist/vue.mjs",
-			"require": "./dist/vue.cjs"
+			"import": {
+				"types": "./dist/index.d.mts",
+				"default": "./dist/index.mjs"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
 		},
 		"./nuxt": {
-			"import": "./dist/nuxt.mjs",
-			"require": "./dist/nuxt.cjs"
+			"import": {
+				"types": "./dist/nuxt.d.mts",
+				"default": "./dist/nuxt.mjs"
+			},
+			"require": {
+				"types": "./dist/nuxt.d.cts",
+				"default": "./dist/nuxt.cjs"
+			}
+		},
+		"./vue": {
+			"import": {
+				"types": "./dist/vue.d.mts",
+				"default": "./dist/vue.mjs"
+			},
+			"require": {
+				"types": "./dist/vue.d.cts",
+				"default": "./dist/vue.cjs"
+			}
 		},
 		"./use-bem-factory": {
-			"import": "./dist/use-bem-factory.mjs",
-			"require": "./dist/use-bem-factory.cjs"
+			"import": {
+				"types": "./dist/use-bem-factory.d.mts",
+				"default": "./dist/use-bem-factory.mjs"
+			},
+			"require": {
+				"types": "./dist/use-bem-factory.d.cts",
+				"default": "./dist/use-bem-factory.cjs"
+			}
 		}
 	},
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"prepare": "lefthook install",
 		"lint": "eslint \"**/*.{js,ts,vue,yml,yaml,json,json5,jsonc,md}\"",
@@ -57,8 +78,7 @@
 		"release": "release-it --disable-metrics"
 	},
 	"dependencies": {
-		"@morev/bem-classnames": "^1.0.2",
-		"@morev/utils": "^3.6.0",
+		"@morev/bem-classnames": "^1.1.0",
 		"@nuxt/kit": "3.10.3",
 		"magic-string": "^0.30.7",
 		"unplugin": "1.7.1"
@@ -66,6 +86,7 @@
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.2.2",
 		"@morev/eslint-config": "^29.0.0",
+		"@morev/utils": "^3.6.0",
 		"@release-it/conventional-changelog": "^8.0.1",
 		"@total-typescript/ts-reset": "^0.5.1",
 		"@vitest/coverage-v8": "^1.3.1",

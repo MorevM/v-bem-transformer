@@ -1,10 +1,11 @@
 import { createUnplugin } from 'unplugin';
 import { mergeObjects } from '@morev/utils';
-import { transformer } from '../lib/transformer.js';
-import { defaultOptions } from './_defaults.js';
+import { transformer } from './lib';
+import { defaultOptions } from './_defaults';
+import type { Options } from './types';
 
-export const unplugin = createUnplugin((userOptions) => {
-	const options = mergeObjects(defaultOptions, userOptions);
+export const unplugin = createUnplugin((userOptions: Partial<Options>) => {
+	const options = mergeObjects(defaultOptions, userOptions) as Required<Options>;
 
 	return {
 		name: 'v-bem-transformer',

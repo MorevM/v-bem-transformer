@@ -1,5 +1,7 @@
-export const defaultOptions = {
-	transformInclude: (id) => id.endsWith('.vue'),
+import type { Options } from './types';
+
+export const defaultOptions: Options = {
+	transformInclude: (id: string) => id.includes('.vue'),
 	directiveName: 'v-bem',
 	bemOptions: {
 		delimiters: {
@@ -14,5 +16,4 @@ export const defaultOptions = {
 	blockName: 'name',
 	priorityBlockName: 'block',
 	fallbackBlockName: 'unknown',
-	composableName: 'useBem',
 };

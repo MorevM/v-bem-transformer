@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { transformer } from '../lib/index.js';
+import { transformer } from '../src/lib/index';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
