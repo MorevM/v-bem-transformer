@@ -3,6 +3,7 @@
 	"description": "Intuitive and performant BEM in Vue files via directive syntax",
 	"type": "module",
 	"version": "1.2.3",
+	"sideEffects": false,
 	"private": false,
 	"license": "MIT",
 	"publishConfig": {
