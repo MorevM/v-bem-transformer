@@ -1,10 +1,10 @@
 import { bemClassnames } from '@morev/bem-classnames';
 import { mergeObjects } from '@morev/utils';
-import { defaultOptions } from './_defaults';
-import type { Options } from './types';
+import { DEFAULT_PLUGIN_OPTIONS } from './_defaults';
+import type { PluginOptions } from './types';
 
-export const vuePlugin = (userOptions: Options) => {
-	const options = mergeObjects(defaultOptions, userOptions);
+export const vuePlugin = (userOptions?: Partial<PluginOptions>) => {
+	const options = mergeObjects(DEFAULT_PLUGIN_OPTIONS, userOptions) as Required<PluginOptions>;
 
 	const bem = bemClassnames(options.bemOptions);
 

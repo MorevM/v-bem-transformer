@@ -1,6 +1,9 @@
 import type { BemFunction, ModuleOptions } from '@morev/bem-classnames';
 
-export type Options = {
+/**
+ * The options passed in to `unplugin`.
+ */
+export type BundlerOptions = {
 	/**
 	 * Custom predicate function to filter the modules to be transformed.
 	 *
@@ -18,6 +21,12 @@ export type Options = {
 	 * @default 'v-bem'
 	 */
 	directiveName: string;
+};
+
+/**
+ * The options passed in Vue plugin.
+ */
+export type PluginOptions = {
 
 	/**
 	 * BEM converter options. \
@@ -56,6 +65,18 @@ export type Options = {
 	 * @default 'unknown'
 	 */
 	fallbackBlockName: string;
+};
+
+/**
+ * The options of Nuxt module.
+ */
+export type NuxtModuleOptions = BundlerOptions & PluginOptions & {
+	/**
+	 * The name of auto-registered composable.
+	 *
+	 * @default 'useBem'
+	 */
+	composableName: string;
 };
 
 export type BemFunctionFactory = (

@@ -4,8 +4,8 @@ import { dirname, join } from 'node:path';
 import { addImports, addTemplate, addVitePlugin, defineNuxtModule, isNuxt2, addPlugin, isNuxt3, addTypeTemplate } from '@nuxt/kit';
 import { isArray } from '@morev/utils';
 import { webpackPlugin, vitePlugin } from './bundlers';
-import { defaultOptions } from './_defaults';
-import type { Options } from './types';
+import { DEFAULT_NUXT_OPTIONS } from './_defaults';
+import type { NuxtModuleOptions } from './types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -14,7 +14,7 @@ const MODULE_NAME = `${SCOPE}/v-bem-transformer`;
 
 const BABEL_PLUGIN_NAME = '@babel/plugin-transform-logical-assignment-operators';
 
-export default defineNuxtModule<Options & { composableName?: string }>({
+export default defineNuxtModule<NuxtModuleOptions>({
 	meta: {
 		name: `${MODULE_NAME}/nuxt`,
 		configKey: 'vBemTransformer',
@@ -22,7 +22,7 @@ export default defineNuxtModule<Options & { composableName?: string }>({
 			nuxt: '>= 2.17.0 || >=3.5.0',
 		},
 	},
-	defaults: () => defaultOptions,
+	defaults: () => DEFAULT_NUXT_OPTIONS,
 	hooks: {},
 	async setup(options, nuxt) {
 		// This is necessary because the package uses utilities

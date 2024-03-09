@@ -1,8 +1,11 @@
-import type { Options } from './types';
+import type { BundlerOptions, NuxtModuleOptions, PluginOptions } from './types';
 
-export const defaultOptions: Options = {
+export const DEFAULT_BUNDLER_OPTIONS: BundlerOptions = {
 	transformInclude: (id: string) => id.includes('.vue'),
 	directiveName: 'v-bem',
+};
+
+export const DEFAULT_PLUGIN_OPTIONS: PluginOptions = {
 	bemOptions: {
 		delimiters: {
 			element: '__',
@@ -16,4 +19,11 @@ export const defaultOptions: Options = {
 	blockName: 'name',
 	priorityBlockName: 'block',
 	fallbackBlockName: 'unknown',
+};
+
+
+export const DEFAULT_NUXT_OPTIONS: NuxtModuleOptions = {
+	...DEFAULT_BUNDLER_OPTIONS,
+	...DEFAULT_PLUGIN_OPTIONS,
+	composableName: 'useBem',
 };

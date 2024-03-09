@@ -1,8 +1,8 @@
 import { mergeObjects } from '@morev/utils';
 import { bemClassnames } from '@morev/bem-classnames';
 import { getCurrentInstance } from 'vue';
-import { defaultOptions } from './_defaults';
-import type { BemFunctionFactory, Options } from './types';
+import { DEFAULT_PLUGIN_OPTIONS } from './_defaults';
+import type { BemFunctionFactory, PluginOptions } from './types';
 
 /**
  * Returns `useBem` composable with pre-defined options. \
@@ -12,8 +12,8 @@ import type { BemFunctionFactory, Options } from './types';
  *
  * @returns               `useBem` composable.
  */
-export const useBemFactory = (userOptions: Partial<Options>): BemFunctionFactory => {
-	const options = mergeObjects(defaultOptions, userOptions) as Required<Options>;
+export const useBemFactory = (userOptions: Partial<PluginOptions>): BemFunctionFactory => {
+	const options = mergeObjects(DEFAULT_PLUGIN_OPTIONS, userOptions) as Required<PluginOptions>;
 	const bem = bemClassnames(options.bemOptions);
 
 	return (name?: string | null) => {
