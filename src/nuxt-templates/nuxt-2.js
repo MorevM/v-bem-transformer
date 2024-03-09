@@ -1,4 +1,4 @@
 import Vue from 'vue';
-import { vuePlugin } from '@local-morev/v-bem-transformer/dist/vue.cjs';
+import { vuePlugin } from '{{MODULE_NAME}}/dist/vue.cjs';
 
-Vue.use(vuePlugin({{options}}));
+Vue.use(vuePlugin({{OPTIONS}}));

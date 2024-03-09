@@ -1,7 +1,8 @@
-import { vuePlugin } from '@local-morev/v-bem-transformer/vue';
+import { vuePlugin } from '{{MODULE_NAME}}/vue';
+import { defineNuxtPlugin } from '#imports';
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(
-    vuePlugin({{options}})
+    vuePlugin({{OPTIONS}})
   );
 });

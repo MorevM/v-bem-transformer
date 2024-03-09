@@ -23,7 +23,8 @@
 		"url": "https://github.com/MorevM/v-bem-transformer/issues"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"types"
 	],
 	"exports": {
 		".": {

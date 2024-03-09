@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '@morev/bem-classnames';
+import type { BemFunction, ModuleOptions } from '@morev/bem-classnames';
 
 export type Options = {
 	/**
@@ -57,6 +57,30 @@ export type Options = {
 	 */
 	fallbackBlockName: string;
 };
+
+export type BemFunctionFactory = (
+	/**
+	 * Function to create classes according to the BEM methodology for a BEM block with the specified `name`.
+	 * If `name` is not specified or `null`, the name of the component where the composable is called will be used (if possible to define).
+	 *
+	 * @example
+	 *   const b = useBem('block');
+	 *   b(null); // block
+	 *   b('element', { modifier: true }); // block__element block__element--modifier
+	 * @example
+	 *   <script setup>
+	 *     defineOptions({ name: 'the-block' });
+	 *
+	 *     const b = useBem();
+	 *     b('element'); // the-block__element
+	 *   </script>
+	 *
+	 * @param   name   BEM block name.
+	 *
+	 * @returns        Function to create classes according to the BEM methodology.
+	 */
+	(name?: string | null) => BemFunction
+);
 
 export type ParsedClassDeclaration = {
 	/**
