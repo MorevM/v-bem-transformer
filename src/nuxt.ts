@@ -94,8 +94,7 @@ export default defineNuxtModule<NuxtModuleOptions>({
 		const isComposableRegistrationNeeded = isNuxt3()
 			// This is how Nuxt itself checks for the presence of `bridge`
 			// https://github.com/nuxt/nuxt/blob/2d3f495a7f3f58da91f3026c6430392072f9d834/packages/kit/src/compatibility.ts#L29
-			|| (isNuxt2() && (nuxt.options as any).bridge)
-			|| options.composableName;
+			|| (isNuxt2() && (nuxt.options as any).bridge);
 
 		if (!isComposableRegistrationNeeded) return;
 
