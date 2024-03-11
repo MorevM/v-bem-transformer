@@ -5,8 +5,8 @@ dist
 coverage
 node_modules
 
-# Lodash templates inside
-src/_nuxt-plugin.js
+# Template files
+src/nuxt-templates/
 
 LICENSE.md
 CHANGELOG.md
