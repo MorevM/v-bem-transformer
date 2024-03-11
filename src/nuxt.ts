@@ -9,7 +9,7 @@ import type { NuxtModuleOptions } from './types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const SCOPE = '@local-morev';
+const SCOPE = '@morev';
 const MODULE_NAME = `${SCOPE}/v-bem-transformer`;
 
 const BABEL_PLUGIN_NAME = '@babel/plugin-transform-logical-assignment-operators';
