@@ -1,5 +1,13 @@
 
 
+## [1.2.5](https://github.com/MorevM/v-bem-transformer/compare/v1.2.4...v1.2.5) (2024-03-11)
+
+
+### Bug fixes
+
+* **nuxt:** Do not register `useBem` composable without Bridge ([bd652a9](https://github.com/MorevM/v-bem-transformer/commit/bd652a90dde25203207f636f90939f204bc255b0))
+* Proper Nuxt package name ([fcce8a3](https://github.com/MorevM/v-bem-transformer/commit/fcce8a3a16c2ade81d2704b9ecc31a47f0314a9a))
+
 ## [1.2.4](https://github.com/MorevM/v-bem-transformer/compare/v1.2.3...v1.2.4) (2024-03-11)
 
 

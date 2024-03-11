@@ -2,7 +2,7 @@
 	"name": "@morev/v-bem-transformer",
 	"description": "Intuitive and performant BEM in Vue files via directive syntax",
 	"type": "module",
-	"version": "1.2.4",
+	"version": "1.2.5",
 	"sideEffects": false,
 	"private": false,
 	"license": "MIT",
