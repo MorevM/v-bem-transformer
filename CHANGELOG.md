@@ -1,5 +1,40 @@
 
 
+## [1.2.4](https://github.com/MorevM/v-bem-transformer/compare/v1.2.3...v1.2.4) (2024-03-11)
+
+
+### Tests
+
+* Add more test cases ([fa99171](https://github.com/MorevM/v-bem-transformer/commit/fa99171b546276f1561ec0a999aef9b6ccb2f6fb))
+
+
+### Bug fixes
+
+* Define the block name using Composition API if `$options` aren't provided ([5271912](https://github.com/MorevM/v-bem-transformer/commit/5271912ba11341b380226d5347dd0d416045c126))
+* Proper `useBemFactory` and `useBem` signatures ([617e968](https://github.com/MorevM/v-bem-transformer/commit/617e968832a5bf18437187e6585f1d7e82d84f70))
+* Proper types, Nuxt compatibility ([7212b2f](https://github.com/MorevM/v-bem-transformer/commit/7212b2f34a3d28676de441436a2f112c3bfc4502))
+
+
+### Refactoring
+
+* More granular options ([d9a04ec](https://github.com/MorevM/v-bem-transformer/commit/d9a04ec102b867cd0533acec565ea3710be70491))
+* Rewrite to TS, restore Nuxt 2 functionality with modern build ([ace3930](https://github.com/MorevM/v-bem-transformer/commit/ace39304dc0216cd915c4b9bdb412a9f41ed6ba3))
+* Update base BEM classnames package ([4a4dd8b](https://github.com/MorevM/v-bem-transformer/commit/4a4dd8bdf593f4b7221610004b4a9c27e1c08ca7))
+
+
+### Documentation
+
+* Add `README.md` ([34bd8da](https://github.com/MorevM/v-bem-transformer/commit/34bd8da15077b8ae4311e387e3c0c255ae79e4a3))
+
+
+### CI improvements
+
+* Run tasks on Node 20 ([a6814b7](https://github.com/MorevM/v-bem-transformer/commit/a6814b771940f04f933a16c6c8359c3b1dcb369d))
+
+
+### Chores
+* Mark the package as side-effects free ([9f6d6dd](https://github.com/MorevM/v-bem-transformer/commit/9f6d6ddcb45aa3d5f45625fc55b09670275644d4))
+
 ## [1.2.3](https://github.com/MorevM/v-bem-transformer/compare/v1.2.2...v1.2.3) (2024-01-12)
 
 
