@@ -82,7 +82,7 @@
 	"dependencies": {
 		"@morev/bem-classnames": "^1.1.0",
 		"@nuxt/kit": "3.10.3",
-		"magic-string": "^0.30.7",
+		"magic-string": "^0.30.8",
 		"unplugin": "1.7.1"
 	},
 	"devDependencies": {
