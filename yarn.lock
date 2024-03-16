@@ -728,10 +728,10 @@
   dependencies:
     call-bind "^1.0.5"
 
-"@morev/bem-classnames@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@morev/bem-classnames/-/bem-classnames-1.1.0.tgz#d13363f6654d33fb289d52bedd978be88099c95e"
-  integrity sha512-cDoGINfV919pOnOY/+Dmk4kImrgmamz7V+n6CaxEPRJ82l0Rd1sxvf/3K+nTSFMEEW2rgeZ9oRYsZxwsSXWLXg==
+"@morev/bem-classnames@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@morev/bem-classnames/-/bem-classnames-1.1.1.tgz#56279add38fec0488d646b71a53c18164287e1fc"
+  integrity sha512-1ycHkrs/If6tobZrBAgyvcCMRrQqR8AmwhRaPJ4MV8SQfrVDbCtvz4FyUSA+Xe3D2SBxc5B6j9s2vvwxpAXCCw==
   dependencies:
     "@morev/utils" "^3.6.0"
 
