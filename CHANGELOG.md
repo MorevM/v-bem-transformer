@@ -1,5 +1,13 @@
 
 
+## [1.2.6](https://github.com/MorevM/v-bem-transformer/compare/v1.2.5...v1.2.6) (2025-08-18)
+
+
+### Bug fixes
+
+* Allow dynamic element names ([084b74e](https://github.com/MorevM/v-bem-transformer/commit/084b74e59a0bfec30c0324ef35fbb0c587e3e7d8))
+
+
 ## [1.2.5](https://github.com/MorevM/v-bem-transformer/compare/v1.2.4...v1.2.5) (2024-03-11)
 
 
