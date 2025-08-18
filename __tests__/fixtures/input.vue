@@ -54,5 +54,7 @@
 
 		<div v-bem:smth="{ reverseOrder: 1 }" :class="dynamicClass"></div>
 		<div v-bem:smth.static="{ reverseOrder: 1 }" :class="[dynamicClassAsArray]"></div>
+
+		<div v-bem:[dynamicElement]></div>
 	</some-component>
 </template>

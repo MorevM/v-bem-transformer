@@ -1,15 +1,31 @@
 /**
  * Wraps expressions that need it into template strings.
  *
- * @param   str                 A string to operate with.
- * @param   isTemplateLiteral   Whether the string is an existing template string literal.
+ * @param   str                           A string to operate with.
+ * @param   options
+ * @param   options.isTemplateLiteral     Whether the string is an existing template string literal.
+ * @param   options.allowDynamicBinding   Whether to allow usage of `[]` for dynamic in-place bindings.
  *
- * @returns                     Conditionally wrapped string.
+ * @returns                               Conditionally wrapped string.
  */
-const dynamicTransform = (str: string, isTemplateLiteral: boolean = false) => {
+const dynamicTransform = (
+	str: string,
+	options?: {
+		isTemplateLiteral?: boolean;
+		allowDynamicBinding?: boolean;
+	},
+) => {
+	const {
+		isTemplateLiteral = false,
+		allowDynamicBinding = false,
+	} = options ?? {};
+
 	if (str.startsWith('[')) {
-		return '${' + str.slice(1, -1) + '}'; // eslint-disable-line no-autofix/prefer-template
+		return allowDynamicBinding
+			? str.slice(1, -1)
+			: '${' + str.slice(1, -1) + '}'; // eslint-disable-line no-autofix/prefer-template
 	}
+
 	return isTemplateLiteral ? str : `'${str}'`;
 };
 
@@ -30,7 +46,7 @@ export const fetchElement = (source: string, index: number) => {
 		}
 	}
 
-	return [dynamicTransform(result), index] as const;
+	return [dynamicTransform(result, { allowDynamicBinding: true }), index] as const;
 };
 
 /**
@@ -85,5 +101,9 @@ export const fetchStaticClassnames = (source: string, index: number) => {
 		}
 	}
 
-	return [result.map(i => dynamicTransform(i, true)).join(' '), index] as const;
+	const resultString = result
+		.map(i => dynamicTransform(i, { isTemplateLiteral: true }))
+		.join(' ');
+
+	return [resultString, index] as const;
 };

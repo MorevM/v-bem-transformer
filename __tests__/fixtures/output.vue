@@ -54,5 +54,7 @@
 
 		<div  :class="[dynamicClass, b('smth', { reverseOrder: 1 })]"></div>
 		<div  :class="[dynamicClassAsArray, b('smth', { reverseOrder: 1 }, `static`)]"></div>
+
+		<div :class="b(dynamicElement)"></div>
 	</some-component>
 </template>
